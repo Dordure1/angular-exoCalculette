@@ -1,0 +1,18 @@
+<div calss="calculette">
+    
+    <span class="firstNumber">you're numbers</span> 
+    <br>
+    <input  type="number" [(ngModel)] = "num1">
+    <input class="input-field col s6" type="number" [(ngModel)] = "num2">
+    <br><br>
+    <span class="operation">Choose your operation</span> 
+    <br>
+
+    <button class="addition" class="btn-floating btn-large waves-effect waves-light red" (click)="addFunction()">+</button>
+    <button class="substraction" class="btn-floating btn-large waves-effect waves-light red" (click)="substractFunction()">-</button>
+    <button class="multiplication"class="btn-floating btn-large waves-effect waves-light red" (click)="multiplicationFunction()">*</button>
+    <button class="Division"class="btn-floating btn-large waves-effect waves-light red" (click)="divFunction()">/</button>
+   
+    <br>
+    <span class ="result"> results = {{result}} </span>
+</div>
